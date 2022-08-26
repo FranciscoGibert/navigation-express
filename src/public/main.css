@@ -1,0 +1,16 @@
+.margin{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.marginbottom{
+    margin-bottom: 5px;
+}
+
+#divContact{
+    width: 100px;
+    height: 300px;
+    
+}
+
