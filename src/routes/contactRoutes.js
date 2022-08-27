@@ -17,9 +17,11 @@ CONTACT_ROUTER.get("/datos", (req, res)=>{
         text: datosRegistro[2]
     })
     /**
-     * Apii
+     * Api
+     * 
     */
-    sgMail.setApiKey('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')
+    const apiKey = process.env.SENDGRID_API_KEY;
+    sgMail.setApiKey(apiKey)
     const msg = [{
     to: datosRegistro[0]+'@'+datosRegistro[1], // Change to your recipient
     from: 'franciscojoin2@gmail.com', // Change to your verified sender
