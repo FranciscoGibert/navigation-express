@@ -20,7 +20,7 @@ const validacion = document.getElementById("enviar")
 
 function sendData(username, surname){
     if(username.length && surname.length != 2){
-        fetch('https://franciscogibert-nodejs-app.herokuapp.com/datos/api/datos', {
+        fetch('https://franciscogibert-nodejs-app.herokuapp.com/api/datos', {
         method: 'POST',
         body: JSON.stringify(arrayData),
         headers:{
