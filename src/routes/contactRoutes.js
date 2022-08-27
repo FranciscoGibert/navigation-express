@@ -1,6 +1,9 @@
 import { render } from "ejs"
 import express, { Router } from "express"
 import sgMail from '@sendgrid/mail'
+import dotenv from "dotenv"
+dotenv.config("../../.env")
+
 const CONTACT_ROUTER = Router()
 let datosRegistro = ''
 
@@ -20,7 +23,7 @@ CONTACT_ROUTER.get("/datos", (req, res)=>{
      * Api
      * 
     */
-    const apiKey = process.env.SENDGRID_API_KEY;
+    const apiKey = process.env.SENDGRID_API_KEY3;
     sgMail.setApiKey(apiKey)
     const msg = [{
     to: datosRegistro[0]+'@'+datosRegistro[1], // Change to your recipient
