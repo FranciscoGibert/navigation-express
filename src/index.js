@@ -26,8 +26,8 @@ app.set('views', join(rootCorregido, 'views')) // join nos permite prescindir de
 
 app.use(express.static(join(rootCorregido, 'public')))
 
-
-app.listen(process.env.PORT || 3000, ()=>{ 
+const PORT = process.env.PORT
+app.listen(PORT || 3000, ()=>{ 
     console.log("Server esucuchando en puerto 3000")
     console.log()
 })
