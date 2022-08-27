@@ -4,9 +4,9 @@ import cors from "cors"
 
 import {join} from "path"
 
-import mainRouter from "./routes/mainRoutes.js"
+import mainRouter from "./src/routes/mainRoutes.js"
 
-import CONTACT_ROUTER from "./routes/contactRoutes.js"
+import CONTACT_ROUTER from "./src/routes/contactRoutes.js"
 
 const {pathname: root} = new URL('../src', import.meta.url) // no podemos utilizar __dirname en module, import.meta.url nos trae el contexto
 
